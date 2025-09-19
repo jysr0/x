@@ -1,0 +1,48 @@
+#BRIGHTNESS
+XF86MonBrightnessUp
+	brightnessctl set 2%+ && pkill -RTMIN+2 dwmblocks
+
+XF86MonBrightnessDown
+	brightnessctl set 2%- && pkill -RTMIN+2 dwmblocks
+
+#VOLUME
+XF86AudioRaiseVolume
+	pamixer -i 2 && pkill -RTMIN+5 dwmblocks
+
+XF86AudioLowerVolume
+	pamixer -d 2 && pkill -RTMIN+5 dwmblocks
+
+XF86AudioMute
+	pamixer -t && pkill -RTMIN+5 dwmblocks
+
+#BROWSER
+super + s
+	$BROWSER
+
+#DEFAULT FILE MANAGER
+super + e
+	$TERMINAL -e lf
+
+#EMOJIS
+super + alt + e
+	dmenu_emojis.sh
+
+#SET BACKGROUND
+super + alt + w
+	dmenu_wallpaper.sh
+
+#CLIPBOARD
+super + alt + v
+	clipmenu
+
+#TERMINAL
+super + Return
+	$TERMINAL
+
+#SHUTDOWN
+super + alt + x
+	dmenu_shutdown.sh
+
+#LOCKSCREEN
+super + control + l
+	slock
