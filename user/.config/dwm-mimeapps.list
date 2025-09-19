@@ -1,0 +1,24 @@
+[Added Associations]
+#image/*=sxiv.desktop
+audio/ogg=mpv.desktop
+audio/opus=mpv.desktop
+
+#[Removed Associations]
+#audio/*=firefox.desktop;librewolf.desktop
+#video/*=firefox.desktop;librewolf.desktop
+
+[Default Applications]
+#application/x-gnome-saved-search=nemo.desktop
+inode/directory=lf.desktop
+x-scheme-handler/http=librewolf.desktop
+x-scheme-handler/https=librewolf.desktop
+text/*=vim.desktop
+application/xhtml+xml=librewolf.desktop
+application/x-xpinstall=librewolf.desktop
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop
+image/*=sxiv.desktop
+audio/*=mpv.desktop
+audio/ogg=mpv.desktop
+audio/opus=mpv.desktop
+video/*=mpv.desktop
+video/webm=mpv.desktop
