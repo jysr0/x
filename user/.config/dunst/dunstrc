@@ -37,7 +37,7 @@
 
     # Position the notification in the top right corner
     #origin = bottom-right
-    origin = top-center 
+    origin = top-right
 
     # Offset from the origin
     # NOTE: Dunst from version 1.11 and older use this alternative notation
@@ -49,7 +49,7 @@
 
     # Maximum number of notification (0 means no limit)
     #notification_limit = 20
-    notification_limit = 1
+    notification_limit = 3
 
     ### Progress bar ###
 
@@ -135,7 +135,7 @@
     #  * urgency_ascending: sort by urgency (low then normal then critical)
     #  * urgency_descending: sort by urgency (critical then normal then low)
     #  * update: sort by update (most recent always at the top)
-    sort = yes
+    sort = update
 
     # Don't remove messages, if the user is idle (no mouse or keyboard input)
     # for longer than idle_threshold seconds.
