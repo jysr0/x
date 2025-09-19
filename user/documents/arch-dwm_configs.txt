@@ -9,14 +9,15 @@
 #also look for other configs in `google keep`
 
 #what to transfer to github:------------------------------------
+#- /etc/sudoers.d/moh + add moh user to wheel group + adding `wheel ALL=(ALL:ALL) ALL` to /etc/sudoers file
+#
 #- /etc/X11/xorg.conf.d/*
 #- /etc/X11/XF86keysym.h
 #- /etc/crontab
-#- /etc/xdg
-#- /etc/sudoers.d/moh + add moh user to wheel group + adding `wheel ALL=(ALL:ALL) ALL` to /etc/sudoers file
+#
 #- ~/
 #
-#- look in: ~/.bashrc, .bash_profile, .xinitrc, .vimrc , .suckless , .scripts , Pictures , .librewolf/fd.../user-override.js , Downloads , Documents , .config , .local/share)
+#- ~/.bashrc, .bash_profile, .xinitrc, .vimrc , .suckless , .scripts , Pictures , .librewolf/fd.../user-override.js , Downloads , Documents , .config , .local/share)
 #----------------------------------------------------------------
 
 
