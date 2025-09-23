@@ -37,7 +37,8 @@ export XDG_WALLPAPERS_DIR="$HOME/pictures/wallpapers"
 #user env variables:-----------
 export EDITOR="vim"
 #export PAGER="vim -R"
-export BROWSER="librewolf"
+#export BROWSER="librewolf"
+export BROWSER="vivaldi"
 export TERMINAL="alacritty"
 export TERM="alacritty"
 #------------------------------
