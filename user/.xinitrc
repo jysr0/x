@@ -5,6 +5,8 @@ if [ -d "$xinitdir"/xinitrc.d ] ; then
 	unset f
 fi
 
+[ -f ~/.xprofile ] && . ~/.xprofile
+
 #dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=:0
 
 #systemctl --user import-environment XDG_CURRENT_DESKTOP DISPLAY
@@ -12,7 +14,7 @@ fi
 #-------------------------------------
 
 setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara
-xset r rate 200 55
+#xset r rate 200 55
 
 sxhkd &
 
