@@ -44,13 +44,13 @@ export TERM="alacritty"
 #------------------------------
 
 #lf file manager vars:-----------
-export lf="/usr/bin/lf"
+#export lf="/usr/bin/lf"
 #export lf_mode="normal"
 #export OPERNER="xdg-open"
 #-------------------------------
 
 #clipmenu vars:-------------
-export CM_HISTLENGTH="10"
-export CM_LAUNCHER="dmenu"
+#export CM_HISTLENGTH="10"
+#export CM_LAUNCHER="dmenu"
 
-exec startx dwm
+#exec startx dwm #to start dwm
