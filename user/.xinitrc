@@ -1,3 +1,10 @@
+if [ -d "$xinitdir"/xinitrc.d ] ; then
+	for f in "$xinitdir/xinitrc.d"/?*.sh ; do
+		[ -x "$f" ] && . "$f"
+	done
+	unset f
+fi
+
 #dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=:0
 
 #systemctl --user import-environment XDG_CURRENT_DESKTOP DISPLAY
@@ -7,15 +14,15 @@
 setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara
 xset r rate 200 55
 
-#sxhkd &
+sxhkd &
 
 #DWM:-----------------------
-#systemctl --user start dunst.service
+systemctl --user start dunst.service
 #dunst &
-#xwallpaper --stretch $XDG_CACHE_HOME/wallpaper
-#picom -b
-#climenud &
-#systemctl --user start clipmenud.service
-#dwmblocks &
+xwallpaper --stretch $XDG_CACHE_HOME/wallpaper
+picom -b
+climenud &
+systemctl --user start clipmenud.service
+dwmblocks &
 #exec dwm
 #-------------------------
