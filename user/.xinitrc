@@ -21,10 +21,13 @@ sxhkd &
 #DWM:-----------------------
 systemctl --user start dunst.service
 #dunst &
+
 xwallpaper --stretch $XDG_CACHE_HOME/wallpaper
 picom -b
-climenud &
+
+#clipmenud &
 systemctl --user start clipmenud.service
+
 dwmblocks &
 #exec dwm
 #-------------------------
