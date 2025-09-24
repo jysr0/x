@@ -53,6 +53,12 @@ alias grep="grep --color=auto "
 alias sudo="sudo "
 #alias sn="~/Downloads/Simplenote-linux-2.23.2-x64/simplenote "
 
+############
+# commands #
+############
+
+xset r rate 200 55
+
 ##########
 # prompt #
 ##########
