@@ -20,6 +20,7 @@ export XDG_CONFIG_DIRS="/etc/xdg"
 export XDG_DATA_DIRS="/usr/share:/usr/local/share"
 export XDG_CURRENT_DESKTOP="dwm"
 export XDG_SESSION_TYPE="x11"
+#export XDG_SESSION_TYPE="wayland"
 export XDG_DESKTOP_DIR="$HOME/desktop"
 export XDG_DOWNLOAD_DIR="$HOME/downloads"
 export XDG_DOCUMENTS_DIR="$HOME/documents"
@@ -44,13 +45,14 @@ export TERM="alacritty"
 #------------------------------
 
 #lf file manager vars:-----------
-#export lf="/usr/bin/lf"
-#export lf_mode="normal"
-#export OPERNER="xdg-open"
+export lf="/usr/bin/lf"
+export lf_mode="normal"
+export OPERNER="xdg-open"
 #-------------------------------
 
 #clipmenu vars:-------------
-#export CM_HISTLENGTH="10"
-#export CM_LAUNCHER="dmenu"
+export CM_HISTLENGTH="10"
+export CM_LAUNCHER="dmenu"
 
 #exec startx dwm #to start dwm
+#exec dwm
