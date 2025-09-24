@@ -7,6 +7,10 @@
 
 #[[ -f ~/.xprofile ]] && . ~/.xprofile
 
+#commands:-------------------
+#xset r rate 200 55
+#---------------------------
+
 #system env variables:---------------
 export DISPLAY=":0"
 export HOME="$HOME"
