@@ -20,7 +20,7 @@ bind '"\C-o":"lfcd\C-m"'
 
 alias ll="ls -lAFh --color=auto --group-directories-first "
 alias la="ls -AF --color=auto --group-directories-first "
-alias la1="ls -1AF --color=auto --group-directories-first "
+alias l1="ls -1AF --color=auto --group-directories-first "
 alias ls="ls --color=auto --group-directories-first "
 
 ################
@@ -56,6 +56,8 @@ alias sudo="sudo "
 ############
 # commands #
 ############
+
+shopt -s histappend #keep shell history accross terminal sessions, also there is HISTSIZE env var to determine how much commands to remember
 
 xset r rate 200 55
 

@@ -49,6 +49,7 @@ export EDITOR="vim"
 export BROWSER="vivaldi"
 export TERMINAL="alacritty"
 export TERM="alacritty"
+export HISTSIZE=500 #shell history size
 #------------------------------
 
 #lf file manager vars:-----------
