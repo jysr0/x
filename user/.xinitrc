@@ -1,3 +1,7 @@
+# #!/bin/sh 
+#make .xinitrc executable so ly display manager can load it
+#----------------------------------------------------------------------------------
+
 if [ -d "$xinitdir"/xinitrc.d ] ; then
 	for f in "$xinitdir/xinitrc.d"/?*.sh ; do
 		[ -x "$f" ] && . "$f"
@@ -7,6 +11,7 @@ fi
 
 #[ -f ~/.xprofile ] && . ~/.xprofile
 
+#-----------------------------------------------------------------------------------
 #dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=:0
 
 #systemctl --user import-environment XDG_CURRENT_DESKTOP DISPLAY
