@@ -149,6 +149,7 @@ vundle plugin manager
 
 #display manager:---------------
 lemurs (TUI dm)
+ly -use this-
 #-------------------------------
 
 coreutils
@@ -158,6 +159,7 @@ xwallpaper(install this)/feh (for setting wallpaper)
 picom compositor (for transparency/alpha)
 cronie
 
+dialog
 xcolor (hex color from wallpaper)
 youtube-dl (aur)
 figlet (ascii art)
