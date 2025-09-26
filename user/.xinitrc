@@ -1,5 +1,4 @@
-# #!/bin/sh 
-#make .xinitrc executable so ly display manager can load it
+#copy .xinitrc content that want to be runned to .bash_profile so ly display manager can start them
 #----------------------------------------------------------------------------------
 
 if [ -d "$xinitdir"/xinitrc.d ] ; then
