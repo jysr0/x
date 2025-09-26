@@ -120,8 +120,15 @@ alacritty (terminal)
 #-------------------
 
 #backend portals:------------
-xdg-desktop-portal(-gtk)
+xdg-desktop-portal
+xdg-desktop-portal-gtk #to get a working file picker
+xdg-desktop-portal-hyprland #for hyprland
 gtk3
+#---------------------------
+
+#polkit-agent:---------------
+polkit-kde-agent #used so apps can elevate privileges
+hyprpolkitagent #for hyprland
 #---------------------------
 
 #xorg:--------------
@@ -158,6 +165,7 @@ mpd, mpv (video/audio player, codecs), mpc (don't install, install `ncmpcpp`)
 xwallpaper(install this)/feh (for setting wallpaper)
 picom compositor (for transparency/alpha)
 cronie
+qt(5/6)-wayland
 
 dialog
 xcolor (hex color from wallpaper)
