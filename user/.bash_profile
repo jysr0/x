@@ -10,7 +10,7 @@
 #system env variables:---------------
 #export DISPLAY=":0"
 #export HOME="$HOME"
-#export PATH="$PATH:$HOME/.scripts"
+export PATH="$PATH:$HOME/.scripts"
 #------------------------------------
 
 #XDG env variables:-------------------------------
@@ -65,7 +65,7 @@ setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara
 xset r rate 200 55
 sxhkd &
 
-systemctl --user start dunst.service
+dunst &
 xwallpaper --stretch $XDG_CACHE_HOME/wallpaper
 picom -b
 systemctl --user start clipmenud.service
