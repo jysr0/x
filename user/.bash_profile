@@ -7,27 +7,25 @@
 
 #[[ -f ~/.xprofile ]] && . ~/.xprofile
 
-#commands:-------------------
-#xset r rate 200 55
-#---------------------------
-
 #system env variables:---------------
-export DISPLAY=":0"
-export HOME="$HOME"
-export PATH="$PATH:$HOME/.scripts"
+#export DISPLAY=":0"
+#export HOME="$HOME"
+#export PATH="$PATH:$HOME/.scripts"
 #------------------------------------
 
 #XDG env variables:-------------------------------
+#export XDG_CURRENT_DESKTOP="dwm"
+#export XDG_SESSION_TYPE="x11"
+#export XDG_SESSION_TYPE="wayland"
+
+#export XDG_RUNTIME_DIR="$HOME/.runtime.dir"
+#export XDG_PUBLICSHARE_DIR="$HOME/"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_STATE_HOME="$HOME/.local/state"
-#export XDG_RUNTIME_DIR="$HOME/.runtime.dir"
 export XDG_CONFIG_DIRS="/etc/xdg"
 export XDG_DATA_DIRS="/usr/share:/usr/local/share"
-export XDG_CURRENT_DESKTOP="dwm"
-export XDG_SESSION_TYPE="x11"
-#export XDG_SESSION_TYPE="wayland"
 export XDG_DESKTOP_DIR="$HOME/desktop"
 export XDG_DOWNLOAD_DIR="$HOME/downloads"
 export XDG_DOCUMENTS_DIR="$HOME/documents"
@@ -39,7 +37,6 @@ export XDG_PUBLIC_DIR="$HOME/public"
 #export XDG_SCRIPTS_DIR="$HOME/.scripts"
 export XDG_TEMPLATES_DIR="$HOME/templates"
 export XDG_WALLPAPERS_DIR="$HOME/pictures/wallpapers"
-#export XDG_PUBLICSHARE_DIR="$HOME/"
 #-------------------------------------------------
 
 #user env variables:-----------
@@ -61,6 +58,11 @@ export OPERNER="xdg-open"
 #clipmenu vars:-------------
 export CM_HISTLENGTH="10"
 export CM_LAUNCHER="dmenu"
+#---------------------------
 
-#exec startx dwm #to start dwm
+#commands:-------------------
+#xset r rate 200 55
+#---------------------------
+
 #exec dwm
+#exec startx dwm #to start dwm
