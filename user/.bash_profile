@@ -43,7 +43,8 @@ export XDG_WALLPAPERS_DIR="$HOME/pictures/wallpapers"
 export EDITOR="vim"
 #export PAGER="vim -R"
 #export BROWSER="librewolf"
-export BROWSER="vivaldi"
+#export BROWSER="vivaldi"
+export BROWSER="vivaldi-stable"
 export TERMINAL="alacritty"
 export TERM="alacritty"
 export HISTSIZE=500 #shell history size
@@ -61,16 +62,16 @@ export CM_LAUNCHER="dmenu"
 #---------------------------
 
 #commands:-------------------
-setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara
-xset r rate 200 55
-sxhkd &
+setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara 2> /dev/null
+xset r rate 200 55 2> /dev/null
+sxhkd & 2> /dev/null
 
-dunst &
-xwallpaper --stretch $XDG_CACHE_HOME/wallpaper
-picom -b
-systemctl --user start clipmenud.service
+dunst & 2> /dev/null
+xwallpaper --stretch $XDG_CACHE_HOME/wallpaper 2> /dev/null
+picom -b 2> /dev/null
+systemctl --user start clipmenud.service 2> /dev/null
 
-dwmblocks &
+dwmblocks & 2> /dev/null
 #---------------------------
 
 #exec dwm
