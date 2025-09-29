@@ -50,12 +50,13 @@ filetype plugin indent on    " required
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
-set linebreak
-set relativenumber
-set number
-"set whichwrap=b,s,<,>,[,]
-set incsearch
-"set hlsearch
+:set linebreak
+:set relativenumber
+:set number
+":set whichwrap=b,s,<,>,[,]
+:set incsearch
+":set hlsearch
+:set tabstop=4
 
 autocmd BufRead,BufNewFile *.txt setlocal syntax=conf "enable syntax highlighting for text/* files
 "---------------------------------------------------------------------------
