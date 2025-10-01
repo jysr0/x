@@ -42,7 +42,8 @@ export environment variables dwm could not find in ~/.xinitrc
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-Dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Adwaita-Dark'
 #gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita-Dark'
-gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+#gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gtk.Settings.FileChooser startup-mode cwd #cwd = home
 #------------------------------------------------------------------------
 
 #dwm hidden wifi connection: nmcli -a device wifi connect dlink hidden yes private yes
@@ -170,6 +171,9 @@ qt(5/6)-wayland
 
 dialog
 xcolor (hex color from wallpaper)
+hicolor-icon-theme
+breeze-icons
+adwaita-icon-theme(-legacy)
 youtube-dl (aur)
 figlet (ascii art)
 flamshot (screenshots)
