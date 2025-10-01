@@ -42,6 +42,7 @@ save_to_clipboard = false
 style = { shape = "Block", blinking = "On" }
 blink_timeout = 10
 unfocused_hollow = true #when true cursor will be rendered as a hollow box when the window is not focused
+
 [mouse]
 hide_when_typing = true
 bindings = [
@@ -54,8 +55,8 @@ bindings = [
 	{ key = "c", mods = "Control | Shift", action = "Copy" },
 	{ key = "v", mods = "Control | Shift", action = "Paste" },
 	{ key = "+", mods = "Control", action = "IncreaseFontSize" },
-        { key = "-", mods = "Control", action = "DecreaseFontSize" },
-    	{ key = "0", mods = "Control", action = "ResetFontSize" },		   
+    { key = "-", mods = "Control", action = "DecreaseFontSize" },
+    { key = "0", mods = "Control", action = "ResetFontSize" },		   
 	#{ key = "t", mods = "Control | Shift", action = "SpawnNewInstance" },
 	{ key = "c", mods = "Super", action = "Quit" },
 	{ key = "PageUp", action = "ScrollHalfPageDown" },
