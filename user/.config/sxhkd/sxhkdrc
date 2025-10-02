@@ -1,9 +1,9 @@
 #BRIGHTNESS
 XF86MonBrightnessUp
-	brightnessctl set 2%+ && pkill -RTMIN+2 dwmblocks
+	brightnessctl -q s 2%+ && pkill -RTMIN+2 dwmblocks
 
 XF86MonBrightnessDown
-	brightnessctl set 2%- && pkill -RTMIN+2 dwmblocks
+	brightnessctl -q s 2%- && pkill -RTMIN+2 dwmblocks
 
 #VOLUME
 XF86AudioRaiseVolume
