@@ -46,7 +46,7 @@ gsettings set org.gnome.desktop.interface icon-theme 'Adwaita-Dark'
 gsettings set org.gtk.Settings.FileChooser startup-mode cwd #cwd = home
 #------------------------------------------------------------------------
 
-#dwm hidden wifi connection: nmcli -a device wifi connect dlink hidden yes private yes
+#hidden wifi connect: 1- nmcli device wifi rescan ssid <ssid to scan>, 2- nmcli -a device wifi connect <ssid> hidden yes private yes
 
 #suckless surf compilation problems:-----
 install: webkit2gtk-4.(something) & gcr
@@ -116,21 +116,26 @@ alacritty (terminal)
 #-------------------
 
 #backend portals:------------
+xdg-desktop-portal-kde #best
 xdg-desktop-portal
 xdg-desktop-portal-gtk #to get a working file picker
 xdg-desktop-portal-hyprland #for hyprland
-gtk3
 #---------------------------
 
 #polkit-agent:---------------
-polkit-kde-agent #used so apps can elevate privileges
+polkit
+polkit-kde-agent #used so GUI apps can elevate privileges
 hyprpolkitagent #for hyprland
 #---------------------------
 
 #hyprland:-----------------
 hyprland
+hypridle
+hyprlock
 hyprpaper
 hyprpicker
+xdg-desktop-portal-hyprland #for hyprland
+wofi
 #--------------------------
 
 #xorg:--------------
@@ -168,6 +173,7 @@ xwallpaper(install this)/feh (for setting wallpaper)
 picom compositor (for transparency/alpha)
 cronie
 qt(5/6)-wayland
+gtk3
 
 dialog
 xcolor (hex color from wallpaper)
