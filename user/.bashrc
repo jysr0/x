@@ -4,15 +4,13 @@
 
 # If not running interactively, don"t do anything
 [[ $- != *i* ]] && return
-#----------------------------------------------------------------------------------
 
-##### stay in current lf directory: #########################################
+#stay in current lf directory:
 lfcd () {
     # `command` is needed in case `lfcd` is aliased to `lf`
     cd "$(command lf -print-last-dir "$@")"
 }
 bind '"\C-o":"lfcd\C-m"'
-#############################################################################
 
 ################
 #  ls aliases  #
