@@ -1,19 +1,10 @@
 #BRIGHTNESS
-XF86MonBrightnessUp
-	brightnessctl -q -e2 -n10 s 5%+ && pkill -RTMIN+2 dwmblocks
-
-XF86MonBrightnessDown
-	brightnessctl -q -e2 -n10 s 5%- && pkill -RTMIN+2 dwmblocks
+{XF86MonBrightnessUp,XF86MonBrightnessDown}
+	{brightnessctl -q -e2 -n10 s 5%+ && pkill -RTMIN+2 dwmblocks,brightnessctl -q -e2 -n10 s 5%- && pkill -RTMIN+2 dwmblocks}
 
 #VOLUME
-XF86AudioRaiseVolume
-	pamixer -i 2 && pkill -RTMIN+5 dwmblocks
-
-XF86AudioLowerVolume
-	pamixer -d 2 && pkill -RTMIN+5 dwmblocks
-
-XF86AudioMute
-	pamixer -t && pkill -RTMIN+5 dwmblocks
+{XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
+	{pamixer -i 2 && pkill -RTMIN+5 dwmblocks,pamixer -d 2 && pkill -RTMIN+5 dwmblocks,pamixer -t && pkill -RTMIN+5 dwmblocks}
 
 #BROWSER
 super + s
@@ -46,3 +37,7 @@ super + alt + x
 #LOCKSCREEN
 super + control + l
 	slock
+
+#SCREEN SHOT
+Prior ; {Prior,s}
+	flameshot {gui,screen}
