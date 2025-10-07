@@ -41,7 +41,7 @@ export environment variables dwm could not find in ~/.xinitrc
 #dwm default theme to dark (dependency: breeze-gtk):---------------------
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-Dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Adwaita-Dark'
-#gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita-Dark'
+#gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita-Dark' or 'Future-cyan-cursors'
 #gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gtk.Settings.FileChooser startup-mode cwd #cwd = home
 #------------------------------------------------------------------------
@@ -74,24 +74,24 @@ setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara #add in xinitrc
 lm_sensors (cpu temperature... )
 #--------------------------------
 
-#suckless software:-----------
-startx (to start dwm, it is not suckless software)
+#dwm:-----------
 dwmblocks
 dwm
 dmenu
 st (terminal)
 slock
 sxiv (image viewer)
+sxhkd
 #-------------------------
 
-#lf:----------------------
+#lf for dwm:----------------------
 lf (terminal file manager)
 ctpv
 ffmpeg/ffmpegthumbnailer
 #-------------------------
 
 #audio:--------------
-pamixer
+pamixer (for pulseaudio)
 pipewire (enable with systemd) / pipewire-alsa/ pipewire-pulse (enable with systemd) / wireplumber (enable with systemd)
 alsa-utils
 #-------------------
@@ -111,9 +111,32 @@ networkmanager
 iputils
 #-------------------------
 
-#terminal:-----------
-alacritty (terminal)
+#xorg:--------------
+xorg
+xorg-xwininfo (window specs)
+xorg-xprop (window specs)
+xorg-xsetroot (window specs)
+xorg-setxkbmap
+xorg-xset (set cursor delay and rate)
+xorg-xev (keyboard key names)
 #-------------------
+
+#clipboard for dwm:------------
+clipmenu (and active `clipmenud` service with systemctl)
+xclip
+xsel
+#----------------------
+
+#vim:-----------------
+vim
+gvim
+vundle plugin manager
+#---------------------
+
+#display manager:---------------
+lemurs (TUI dm)
+ly -use this-
+#-------------------------------
 
 #backend portals:------------
 xdg-desktop-portal-kde #best
@@ -136,50 +159,34 @@ hyprpaper
 hyprpicker
 xdg-desktop-portal-hyprland #for hyprland
 wofi
+udiskie (for removable media)
+hyprdim (dim windows when switching between them)
+woomer (zooming utility)
+swappy (annotation utility)
+clipvault OR cliphist & wl-clipboard(as xclip) & dmenu
+oculante (image viewer)
+hyprmag(aur) (screen magnifier) 
+swhkd(aur)
 #--------------------------
 
-#xorg:--------------
-xorg
-xorg-xwininfo (window specs)
-xorg-xprop (window specs)
-xorg-xsetroot (window specs)
-xorg-setxkbmap
-xorg-xset (set cursor delay and rate)
-xorg-xev (keyboard key names)
-#-------------------
-
-#clipboard:------------
-clipmenu
-	and active `clipmenud` service with systemctl
-xclip
-xsel
-#----------------------
-
-#vim:-----------------
-vim
-gvim
-vundle plugin manager
-#---------------------
-
-#display manager:---------------
-lemurs (TUI dm)
-ly -use this-
-#-------------------------------
+xwallpaper (for dwm) (for setting wallpaper)
+xcolor (for dwm) (hex color from wallpaper)
+startx (to start dwm, it is not suckless software)
 
 coreutils
 xdg-utils
-mpd, mpv (video/audio player, codecs), mpc (don't install, install `ncmpcpp`)
-xwallpaper(install this)/feh (for setting wallpaper)
-picom compositor (for transparency/alpha)
-cronie
 qt(5/6)-wayland
 gtk3
-
-dialog
-xcolor (hex color from wallpaper)
+mpd, mpv (video/audio player, codecs), mpc (don't install, install `ncmpcpp`)
+picom compositor (for transparency/alpha)
+cronie
+flameshot (screenshots) & grim (for wayland)
+zathura(-cb/-djvu/-pdf-poppler/-ps) (pdf reader)
+alacritty (terminal)
 hicolor-icon-theme
 breeze-icons
 adwaita-icon-theme(-legacy)
-youtube-dl (aur)
+
+dialog
+youtube-dl(aur)
 figlet (ascii art)
-flamshot (screenshots)
