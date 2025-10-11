@@ -12,7 +12,7 @@
 	# wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && pkill -RTMIN+5 dwmblocks}
 
 #BROWSER
-super + s
+super + w
 	$BROWSER
 
 #DEFAULT FILE MANAGER
@@ -44,5 +44,5 @@ super + control + l
 	slock
 
 #SCREEN SHOT
-Prior ; {Prior,s}
-	flameshot {gui,screen}
+{super + Print,super + shift + s}
+	{flameshot screen,flameshot gui}
