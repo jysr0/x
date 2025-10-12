@@ -68,6 +68,7 @@ dunst &
 xwallpaper --stretch $XDG_CACHE_HOME/wallpaper
 picom -b
 systemctl --user start clipmenud.service
+xrdb ~/.Xresources
 dwmblocks &
 #exec dwm
 #exec startx dwm #to start dwm
