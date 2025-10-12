@@ -9,10 +9,10 @@ audio/opus=mpv.desktop
 
 #look for `.desktop` files in: /usr/share/applications
 [Default Applications]
-x-scheme-handler/http=vivaldi-stable.desktop
-x-scheme-handler/https=vivaldi-stable.desktop
-application/xhtml+xml=vivaldi-stable.desktop
-application/x-xpinstall=vivaldi-stable.desktop
+x-scheme-handler/http=brave-browser.desktop
+x-scheme-handler/https=brave-browser.desktop
+application/xhtml+xml=brave-browser.desktop
+application/x-xpinstall=brave-browser.desktop
 #application/pdf=org.pwmt.zathura-pdf-poppler.desktop
 application/pdf=org.pwmt.zathura.desktop
 #application/x-gnome-saved-search=nemo.desktop
