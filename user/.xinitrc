@@ -25,5 +25,6 @@ xwallpaper --stretch $XDG_CACHE_HOME/wallpaper
 picom -b
 #clipmenud &
 systemctl --user start clipmenud.service
+xrdb ~/.Xresources
 dwmblocks &
 #exec dwm
