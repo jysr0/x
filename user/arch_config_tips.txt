@@ -72,6 +72,7 @@ setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara #add in xinitrc
 
 #hardware specs:-----------------
 lm_sensors (cpu temperature... )
+sysstat (cpu utilization... )
 #--------------------------------
 
 #dwm:-----------
@@ -86,7 +87,7 @@ sxhkd
 
 #lf for dwm:----------------------
 lf (terminal file manager)
-ctpv
+ctpv(aur)
 ffmpeg/ffmpegthumbnailer
 #-------------------------
 
@@ -133,6 +134,12 @@ gvim
 vundle plugin manager
 #---------------------
 
+#browsers:--------------
+brave(aur)
+librewolf(aur)
+vivaldi
+#-----------------------
+
 #display manager:---------------
 lemurs (TUI dm)
 ly -use this-
@@ -163,10 +170,12 @@ udiskie (for removable media)
 hyprdim (dim windows when switching between them)
 woomer (zooming utility)
 swappy (annotation utility)
-clipvault OR cliphist & wl-clipboard(as xclip) & dmenu
+clipman(aur) & wl-clipboard(as xclip) & dmenu
 oculante (image viewer)
 hyprmag(aur) (screen magnifier) 
 swhkd(aur)
+yazi (file manager) (sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick)
+waybar
 #--------------------------
 
 xwallpaper (for dwm) (for setting wallpaper)
@@ -181,11 +190,12 @@ mpd, mpv (video/audio player, codecs), mpc (don't install, install `ncmpcpp`)
 picom compositor (for transparency/alpha)
 cronie
 flameshot (screenshots) & grim (for wayland)
-zathura(-cb/-djvu/-pdf-poppler/-ps) (pdf reader)
+zathura(-cb/-djvu/-pdf-poppler/-ps) (pdf reader) & poppler
 alacritty (terminal)
 hicolor-icon-theme
 breeze-icons
 adwaita-icon-theme(-legacy)
+yay(aur)
 
 dialog
 youtube-dl(aur)
