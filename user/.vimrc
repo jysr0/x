@@ -1,4 +1,7 @@
-"VUNDLE plugin manager for vim, configs:-----------------------------------------------------------------------------------------------------------
+"""""""""""""""""""""""""
+" VUNDLE plugin manager "
+"""""""""""""""""""""""""
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -43,12 +46,16 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-"-------------------------------------------------------------------------------------
 
-"MY CONFIGS:---------------------------------------------------------------------------
+"""""""""""
+" CONFIGS "
+"""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "used to keep the loading of `defaults.vim` even when `vimrc` exists
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 :set linebreak
 :set relativenumber
@@ -59,4 +66,3 @@ source $VIMRUNTIME/defaults.vim
 :set tabstop=4
 
 autocmd BufRead,BufNewFile *.txt setlocal syntax=conf "enable syntax highlighting for text/* files
-"---------------------------------------------------------------------------
