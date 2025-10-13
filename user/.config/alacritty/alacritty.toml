@@ -8,7 +8,7 @@ dynamic_title = false
 
 [scrolling]
 history = 1000
-multiplier = 2
+multiplier = 1
 
 [font]
 #size = 10
@@ -27,7 +27,7 @@ bold_italic = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold Italic" }
 [colors]	
 cursor = { text = "CellBackground", cursor = "CellForeground" }
 selection = { text = "CellBackground", background = "CellForeground" }
-draw_bold_text_with_bright_colors = false
+draw_bold_text_with_bright_colors = true
 
 [colors.primary]
 foreground = "#dddddd"
