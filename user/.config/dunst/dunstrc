@@ -49,7 +49,7 @@
 
     # Maximum number of notification (0 means no limit)
     #notification_limit = 20
-    notification_limit = 3
+    notification_limit = 4
 
     ### Progress bar ###
 
@@ -275,7 +275,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 10
+    corner_radius = 8
 
     # Define which corners to round when drawing the window. If the corner radius
     # is set to 0 this option will be ignored.
@@ -346,23 +346,23 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#202020"
-    foreground = "#ffffff"
+    background = "#cccccc"
+    foreground = "#111111"
     timeout = 5
     # Icon for notifications with low urgency
     #default_icon = dialog-information
 
 [urgency_normal]
-    background = "#101010"
-    foreground = "#ffffff"
+    background = "#eeeeee"
+    foreground = "#050505"
     timeout = 10
     #override_pause_level = 30
     # Icon for notifications with normal urgency
     #default_icon = dialog-information
 
 [urgency_critical]
-    background = "#550000"
-    foreground = "#ffffff"
+    background = "#fcd4d4"
+    foreground = "#000000"
     #frame_color = "#ff0000"
     timeout = 0
     #override_pause_level = 60
