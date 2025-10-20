@@ -5,7 +5,7 @@
 	///////////////////////
 
 	// "include": [],
-	"expand-center": false,
+	"expand-center": true,
 	"expand-left": true,
 	"expand-right": true,
     "layer": "top",
@@ -14,18 +14,18 @@
     // "height": 20, /*20*/
     // "width": ,
     // "margin": "3",
-	"margin-top": 3,
-	"margin-bottom": 3,
-	"margin-left": 3,
-	"margin-right": 3,
-	"no-center": true,
+	"margin-top": 0,
+	"margin-bottom": 0,
+	"margin-left": 0,
+	"margin-right": 0,
+	"no-center": false,
 	"spacing": 3,
 	// "name": "bar1",
 	// "mode": "overlay",
 	"start_hidden": false,
 	"modifier-reset": "press",
 	"exclusive": true,
-	"fixed-center": true,
+	"fixed-center": false,
 	"passthrough": false,
 	"ipc": false, // for sway
 	// "id": ,
@@ -38,17 +38,18 @@
 	"modules-left": [
         // "image",
         // "sway/workspaces",
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+		"hyprland/window"
         // "dwl/tags"
         // "sway/mode",
         // "sway/scratchpad",
         // "custom/media"
     ],
-    "modules-center": [
+    /*"modules-center": [
         //"sway/window",
         //"dwl/window",
-        "hyprland/window"
-    ],
+        //"hyprland/window"
+    ],*/
     "modules-right": [
         "tray",
         // "mpd",
@@ -78,6 +79,7 @@
         // "inhibitor",
         // "idle_inhibitor",
         // "keyboard-state",
+        "custom/uptime",
         "custom/power"
     ],
 
@@ -295,7 +297,7 @@
 		"icon": false,
 		"icon-size": 18,
 		// "rewrite": {},
-		"expand": false
+		"expand": true
 	},
 	"hyprland/language": {
 		"format": "{}",
@@ -919,6 +921,40 @@
 		"expand": false
 	},
 	
+	"custom/uptime": {
+        "format": "{text}",
+        // "return-type": "json",
+        "max-length": 40,
+        /*"format-icons": {
+            "default": "🎜"
+        },*/
+        "exec": "$HOME/.config/waybar/uptime.sh 2> /dev/null",
+        // "exec-if": "",
+		"exec-on-event": true,
+		"hide-empty-text": true,
+		// "interval": ,
+		// "restart-interval": , // Can't be used with `interval`
+		// "signal": 16,
+		/*"max-length": 6,
+		"min-length": 3,
+		"align": 0.5,
+		"rotate": 0,
+		"justify": "center",
+		"on-update": "",
+		"on-click": "",
+		"on-click-middle": "",
+		"on-click-right": "",
+		"on-scroll-up": , 
+		"on-scroll-down": , 
+		"smooth-scrolling-threshold": ,
+		"menu": "",
+		"menu-file": "",
+		"menu-actions": [],*/
+		"expand": false,
+		"escape": false,
+		"tooltip": false
+		//"tooltip-format": ""
+    },
 	"custom/media": {
         "format": "{icon} {text}",
         "return-type": "json",
@@ -927,13 +963,11 @@
             "spotify": "",
             "default": "🎜"
         },
-        "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null", // Filter player based on name
         // "exec-if": "", // Script in resources folder
 		"exec-on-event": true,
 		"hide-empty-text": true,
-		// "return-type": "",
 		// "interval": ,
 		// "restart-interval": , // Can't be used with `interval`
 		// "signal": 16,

@@ -108,13 +108,13 @@ you can set a style on hover for any module like this
 }
 
 #window {
-    background-color: #005577;
+    background-color: #222222;
 	color: #bbbbbb;
 }
 
 /*
 #hyprland-window {
-    background-color: #005577;
+    background-color: #222222;
 	color: #bbbbbb;
 }
 */
@@ -236,6 +236,16 @@ label:focus {
 
 #wireplumber.muted {
     background-color: #222222;
+    color: #bbbbbb;
+}
+
+#custom-power {
+    background-color: #770033;
+    color: #bbbbbb;
+}
+
+#custom-uptime {
+    background-color: #005577;
     color: #bbbbbb;
 }
 
