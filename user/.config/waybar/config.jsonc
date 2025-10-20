@@ -59,6 +59,8 @@
 		"memory",
 		"cpu",
         "temperature",
+        
+		"disk",
 		
 		// "group/one",
         "network",
@@ -69,7 +71,6 @@
         "backlight",
         // "hyprland/submap",
         // "hyprland/language",
-        "disk",
         "battery",
         // "battery#bat2",
         
