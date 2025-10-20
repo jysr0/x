@@ -5,8 +5,8 @@
 	///////////////////////
 
 	// "include": [],
-	"expand-center": true,
-	"expand-left": false,
+	"expand-center": false,
+	"expand-left": true,
 	"expand-right": true,
     "layer": "top",
    	// "output": ["N156BGE-E41 LCD Monitor"],
@@ -253,9 +253,9 @@
              // "persistent": ""
          },
 		 "persistent-workspaces": {
-			"1": [],
-			"2": []
-			/*"3": [],
+			"1": []
+			/*"2": [],
+			"3": [],
 			"4": [],
 			"5": [],
 			"6": [],
@@ -267,7 +267,7 @@
 		 // "window-rewrite": {},
 		 // "window-rewrite-default": "?",
 		 "format-window-separator": "|",
-		 "workspace-taskbar": {
+		 /*"workspace-taskbar": {
 		 	"enable": true,
 		 	"update-active-window": false,
 		 	"reverse-direction": false,
@@ -278,11 +278,11 @@
 		 	// "ignore-list": [],
 		 	"orientation": "horizontal"
 		 	// "on-click-window": "",
-		 },
+		 },*/
 		 "show-special": false,
 		 "special-visible-only": false,
 		 "persistent-only": false,
-		 "active-only": true,
+		 "active-only": false,
 		 "move-to-monitor": false,
 		 // "ignore-workspaces": [],
 		 "sort-by": "default", // number name id special-centered
