@@ -64,7 +64,9 @@ setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara #add in xinitrc
 
 #edit env variables via systemd: systemctl --user (import/show/set/unset)-environment {env variable...}
 
-#add moh user to wheel group & adding `wheel ALL=(ALL:ALL) ALL` to /etc/sudoers file
+#add your user to wheel group & adding `wheel ALL=(ALL:ALL) ALL` to /etc/sudoers file
+
+#add your user to input, mpd and wheel groups for waybar-keyboard-state module
 
 ############
 # packages #
@@ -73,6 +75,7 @@ setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara #add in xinitrc
 #hardware specs:-----------------
 lm_sensors (cpu temperature... )
 sysstat (cpu utilization... )
+hwinfo
 #--------------------------------
 
 #dwm:-----------
@@ -176,6 +179,7 @@ hyprmag(aur) (screen magnifier)
 swhkd(aur)
 yazi (file manager) (sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick)
 waybar
+polybar
 #--------------------------
 
 xwallpaper (for dwm) (for setting wallpaper)
