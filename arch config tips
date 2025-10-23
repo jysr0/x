@@ -1,14 +1,16 @@
-###########
-# configs #
-###########
+#############################
+########## Configs ##########
+#############################
 
+#######
+# DWM #
+#######
 
 ### dwm execution (startup automatically) ###
 1) install startx 
 2) append `exec dwm` (remove backticks `) in ~/.xinitrc
 3) append `exec startx dwm` (remove backticks `) in ~/.bash_profile
 4) reboot
-
 
 ### backend portals configuration for dwm (recommended way) ###
 1) create ~/.config/environment.d/ then touch 10-env-var.conf in it.
@@ -20,9 +22,8 @@
 	systemctl --user import-environment XDG_CURRENT_DESKTOP DISPLAY	
 	dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=:0
 
-# backend portals configuration for dwm (notrecommended way):
+### backend portals configuration for dwm (notrecommended way) ###
 export environment variables dwm could not find in ~/.xinitrc
-
 
 ### dwm default theme to dark (dependency: breeze-gtk) ###
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-Dark'
@@ -31,42 +32,49 @@ gsettings set org.gnome.desktop.interface icon-theme 'Adwaita-Dark'
 # gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gtk.Settings.FileChooser startup-mode cwd #cwd = home
 
+########
+# WIFI #
+########
 
-### hidden wifi connect: 1- nmcli device wifi rescan ssid <ssid to scan>, 2- nmcli -a device wifi connect <ssid> hidden yes private yes ###
+connect to a hidden wifi:
+nmcli connection reload
+nmcli device wifi rescan ssid <ssid to scan> 
+nmcli -a device wifi connect <ssid> hidden yes private yes 
 
 
 ### suckless surf compilation problems ###
 install: webkit2gtk-4.(something) & gcr
 
+###################
+# Keyboard layout #
+###################
 
-### set keyboard layout us & ara ###
-localectl set-x11-keymap us,ara acer_laptop , grp:win_space_toggle #for win+space toggle
-localectl set-x11-keymap us,ara acer_laptop , grp:alt_shift_toggle #for alt+shift toggle
-setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara #add in xinitrc or xprofile
+localectl set-x11-keymap us,ara acer_laptop , grp:win_space_toggle (for win+space toggle)
+localectl set-x11-keymap us,ara acer_laptop , grp:alt_shift_toggle (for alt+shift toggle)
+OR:
+setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara (add in xinitrc or xprofile)
+
+#####№###
+# Audio #
+#########
+
+* remove wireplumber config to get youtube videos running
+* fix mpd.service not starting for user mode by adding `ProtectKernelModules=no` in ~/.config/systemd/user/mpd.service 
+
+#################
+# Miscellaneous #
+#################
+
+* edit env variables via systemd: systemctl --user (import/show/set/unset)-environment {env variable...}
+* add your user to wheel group & adding `wheel ALL=(ALL:ALL) ALL` to /etc/sudoers file 
+* add your user to input, mpd and wheel groups for waybar-keyboard-state module
 
 
-### remove wireplumber config to get youtube videos running ###
-
-
-### fix mpd.service not starting for user mode by adding `ProtectKernelModules=no` in ~/.config/systemd/user/mpd.service ###
-
-
-### edit env variables via systemd: systemctl --user (import/show/set/unset)-environment {env variable...} ###
-
-
-### add your user to wheel group & adding `wheel ALL=(ALL:ALL) ALL` to /etc/sudoers file ###
-
-
-### add your user to input, mpd and wheel groups for waybar-keyboard-state module ###
-
-
-############
-# packages #
-############
-
+##############################
+########## Packages ##########
+##############################
 
 coreutils
-
 
 ### hardware specs ###
 lm_sensors (cpu temperature... )
@@ -177,6 +185,7 @@ waybar
 polybar
 
 
+### miscellaneous ###
 xwallpaper 
 xcolor (hex color from wallpaper)
 startx (for starting dwm)
