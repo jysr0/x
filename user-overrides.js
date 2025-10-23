@@ -1,3 +1,4 @@
+/* ~/.librewolf/user/ */
 /******
 *    name: arkenfox user.js
 *    date: 14 August 2025
