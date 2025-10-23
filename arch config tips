@@ -1,18 +1,3 @@
-#
-#other configs in `google keep`
-#
-
-######################
-# transfer to github #
-######################
-
-# /etc/sudoers.d/* 
-# /etc/X11/xorg.conf.d/*
-# /etc/X11/XF86keysym.h
-# /etc/crontab
-#
-# ~/.bashrc, .bash_profile, .xinitrc, .config, .local/share, .vimrc, .suckless, .scripts, .librewolf/librewolf_user/user-override.js, documents, pictures
-
 ###########
 # configs #
 ###########
