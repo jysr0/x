@@ -1,3 +1,5 @@
+# ~/.config/systemd/user/default.target.wants/
+
 [Unit]
 Description=Music Player Daemon
 Documentation=man:mpd(1) man:mpd.conf(5)
