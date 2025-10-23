@@ -21,7 +21,7 @@ xset r rate 200 55
 sxhkd &
 systemctl --user start dunst.service
 #dunst &
-xwallpaper --stretch $XDG_CACHE_HOME/wallpaper
+xwallpaper --stretch $XDG_CACHE_HOME/wall
 picom -b
 #clipmenud &
 systemctl --user start clipmenud.service
