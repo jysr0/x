@@ -148,15 +148,15 @@ cmd extract ${{
 }}
 map Y	extract
 
-cmd wallpaper ${{
+cmd bg ${{
 	clear; set -f
 	printf "%s, " "$f"; printf "set as wallpaper?[Y/n]"
 	read ans
 	[[ $ans == "n" ]] && exit
 	#[[ $(file --mime-type -b $f) == "image/*" ]] && \
-	xwallpaper --stretch $f && cp $f $XDG_CACHE_HOME/wallpaper
+	xwallpaper --stretch $f && cp $f $XDG_CACHE_HOME/bg.jpg
 }}
-map b	wallpaper
+map b	bg
 
 #disabled keybindings:------------------------------------------------------------------------
 #normal/visual mode commands:
