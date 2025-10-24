@@ -62,8 +62,8 @@ setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara (add in xinitrc
 #################
 
 * edit env variables via systemd: systemctl --user (import/show/set/unset)-environment {env variable...}
-* add your user to wheel group & adding `wheel ALL=(ALL:ALL) ALL` to /etc/sudoers file 
-* add your user to input, mpd and wheel groups for waybar-keyboard-state module
+* add the `user` to wheel group and add or uncomment `wheel ALL=(ALL:ALL) ALL` in /etc/sudoers 
+* add the `user` to input, mpd and wheel groups for waybar-keyboard-state module
 * install: webkit2gtk-4.(something) & gcr to avoid suckless surf compilation problems 
 
 ##############################
