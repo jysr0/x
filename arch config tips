@@ -55,7 +55,7 @@ setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara (add in xinitrc
 #########
 
 * remove wireplumber config to get youtube videos running
-* fix mpd.service not starting for user mode by adding `ProtectKernelModules=no` in ~/.config/systemd/user/mpd.service 
+* fix mpd.service not starting for user mode by adding `ProtectKernelModules=no` in ~/.config/systemd/user/default.target.wants/mpd.service 
 
 #################
 # Miscellaneous #
