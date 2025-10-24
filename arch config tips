@@ -76,6 +76,7 @@ coreutils
 lm_sensors (cpu temperature... )
 sysstat (cpu utilization... )
 hwinfo
+acpi (battery level...)
 
 
 ### dwm ###
@@ -101,8 +102,8 @@ alsa-utils
 
 
 ### brightness ###
-brightnessctl
-acpi
+xorg-xbacklight
+brightnessctl (default)
 
 
 ### notifications ###
