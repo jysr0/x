@@ -65,7 +65,7 @@ setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara
 xset r rate 200 55
 sxhkd &
 dunst &
-xwallpaper --stretch $XDG_CACHE_HOME/wall
+xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg
 picom -b
 systemctl --user start clipmenud.service
 xrdb ~/.Xresources
