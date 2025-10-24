@@ -25,7 +25,7 @@ super + alt + e
 
 #SET BACKGROUND
 super + alt + w
-	dmenu_wallpaper.sh
+	dmenu_bg.sh
 
 #CLIPBOARD
 super + alt + v
