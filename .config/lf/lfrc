@@ -7,6 +7,17 @@
 #ueberzug (don't install if you're going to use `ctpv`) 
 #chafa (don't install if you're going to use `ctpv`)
 #and for icons and colors see `lf wiki` in github
+# the following are for ueberzug:
+#ueberzug
+#jq
+#ouch
+#poppler
+#djvulibre
+#pandoc
+#lynx
+#bat
+#imagemagick
+#ffmpegthumbnailer
 
 #config order for changes to take effect (just a thought of mine):----------------------------------------------------
 #OPTIONS
@@ -37,10 +48,19 @@
 
 # OPTIONS: ------------------------------------------------------------------------------------------------------
 #previewer
-set previewer ctpv
-set cleaner ctpvclear
-&ctpv -s $id
-&ctpvquit $id
+# ctpv:
+#set previewer ctpv
+#set cleaner ctpvclear
+#&ctpv -s $id
+#&ctpvquit $id
+# ueberzug:
+#set previewer ~/.config/lf/previewer.sh
+#set cleaner ~/.config/lf/cleaner.sh
+# stpv:
+set previewer stpv
+set cleaner stpvimgclr
+&stpvimg --listen $id
+cmd on-quit $stpvimg --end $id
 
 #icons
 set icons true  # ~/.config/lf #------------------
