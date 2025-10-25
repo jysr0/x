@@ -1,12 +1,3 @@
-[Added Associations]
-#image/*=sxiv.desktop
-audio/ogg=mpv.desktop
-audio/opus=mpv.desktop
-
-#[Removed Associations]
-#audio/*=firefox.desktop;librewolf.desktop
-#video/*=firefox.desktop;librewolf.desktop
-
 #look for `.desktop` files in: /usr/share/applications
 [Default Applications]
 x-scheme-handler/http=brave-browser.desktop
@@ -16,7 +7,7 @@ application/x-xpinstall=brave-browser.desktop
 #application/pdf=org.pwmt.zathura-pdf-poppler.desktop
 application/pdf=org.pwmt.zathura.desktop
 #application/x-gnome-saved-search=nemo.desktop
-inode/directory=lf.desktop
+#inode/directory=lf.desktop
 image/*=sxiv.desktop
 audio/*=mpv.desktop
 audio/ogg=mpv.desktop
@@ -24,3 +15,12 @@ audio/opus=mpv.desktop
 video/*=mpv.desktop
 video/webm=mpv.desktop
 text/*=vim.desktop
+
+[Added Associations]
+#image/*=sxiv.desktop
+audio/ogg=mpv.desktop
+audio/opus=mpv.desktop
+
+[Removed Associations]
+audio/*=firefox.desktop;librewolf.desktop;brave-browser.desktop
+video/*=firefox.desktop;librewolf.desktop;brave-browser.desktop
