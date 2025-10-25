@@ -1,0 +1,6 @@
+# ~/.local/share/icons/default/
+# Inherits value is theme directory name in: ~/.local/share/icons/
+
+[Icon Theme]
+Inherits=ArcStarry-cursors
+
