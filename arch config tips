@@ -178,9 +178,13 @@ clipman (aur) & wl-clipboard (as xclip) & dmenu
 oculante (image viewer)
 hyprmag (aur) (screen magnifier) 
 swhkd (aur)
-yazi (file manager) (sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick)
+(X) yazi (file manager) (sudo pacman -S yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick)
+dolphin file manager
 waybar
 polybar
+vlc OR mpv
+okular for PDFs
+oculante (image viewer)
 
 
 ### miscellaneous ###
