@@ -11,7 +11,7 @@
     "layer": "top",
    	// "output": ["N156BGE-E41 LCD Monitor"],
     "position": "top",
-    // "height": 20, /*20*/
+    "height": 20, /*20*/
     // "width": ,
     // "margin": "3",
 	"margin-top": 0,
@@ -880,10 +880,10 @@
     
 	
 	"image": {
-		"path": "$HOME/pictures/Arch.png",
+		"path": "$HOME/pix/arch.svg",
 		// "exec": "",
-		"size": 16,
-		// "interval": 10,
+		"size": 10,
+		"interval": 10,
 		// "signal": 1,
 		/*"on-update": "",
 		"on-click": "",
@@ -896,7 +896,7 @@
 	},
 	
 	"disk": {
-		"path": "/home",
+		"path": "/users",
 		"interval": 40,
 		"format": "󰉌 {percentage_used}%",
 		// "format": "󰉌  {used} / {total}",
