@@ -68,7 +68,9 @@
         
 		// "wireplumber",
 		"pulseaudio",
+		// "pulseaudio/slider",
         "backlight",
+		// "backlight/slider",
         // "hyprland/submap",
         // "hyprland/language",
         "battery",
@@ -684,27 +686,27 @@
 		"justify": "center",
 		/*"on-update": "",
 		"on-click": "",
-		"on-click-release": ,
-		"on-double-click": ,
-		"on-triple-click": ,
+		"on-click-release": "",
+		"on-double-click": "",
+		"on-triple-click": "",
 		"on-click-middle": "",
-		"on-click-middle-release": ,
-		"on-double-click-middle": , 
-		"on-triple-click-middle": , 
+		"on-click-middle-release": "",
+		"on-double-click-middle": "", 
+		"on-triple-click-middle": "", 
 		"on-click-right": "",
-		"on-click-right-release": ,
-		"on-double-click-right": ,
-		"on-triple-click-right": ,
-		"on-click-backward": ,
-		"on-click-backward-release": ,
-		"on-double-click-backward": , 
-		"on-triple-click-backward": , 
-		"on-click-forward": ,
-		"on-click-forward-release": , 
-		"on-double-click-forward": , 
-		"on-triple-click-forward": , 
-		"on-scroll-left": , 
-		"on-scroll-right": ,
+		"on-click-right-release": "",
+		"on-double-click-right": "",
+		"on-triple-click-right": "",
+		"on-click-backward": "",
+		"on-click-backward-release": "",
+		"on-double-click-backward": "", 
+		"on-triple-click-backward": "", 
+		"on-click-forward": "",
+		"on-click-forward-release": "", 
+		"on-double-click-forward": "", 
+		"on-triple-click-forward": "", 
+		"on-scroll-left": "", 
+		"on-scroll-right": "",
 		"smooth-scrolling-threshold": ,*/
 		"reverse-scrolling": false,
 		"scroll-step": 1.0,
@@ -714,6 +716,13 @@
 		// "menu-actions": [],
 		"expand": false
     },
+	"backlight/slider": {
+		"min": 0,
+		"max": 100,
+		"orientation": "horizontal",
+		// "device": "intel_backlight",
+		"expand": false
+	},
     "battery": {
         // "bat": "/sys/class/power_supply/BAT1/",
         // "adapter": "/sys/class/power_supply/ACAD/",
@@ -896,7 +905,12 @@
 		// "menu-actions": [],
 		"expand": false
     },
-    
+    "pulseaudio/slider": {
+		"min": 0,
+		"max": 100,
+		"orientation": "horizontal",
+		"expand": false
+	},
 	
 	"image": {
 		"path": "$HOME/pix/arch.svg",
@@ -939,6 +953,30 @@
 		"menu-file": "",
 		"menu-actions": [],*/
 		"expand": false
+	},
+
+	// This is just a sample to copy/paste to the actual `menu` key in some of the modules.
+	"menu": {
+		"on-click": "",
+		"on-click-release": "",
+		"on-double-click": "",
+		"on-triple-click": "",
+		"on-click-middle": "",
+		"on-click-middle-release": "",
+		"on-double-click-middle": "", 
+		"on-triple-click-middle": "", 
+		"on-click-right": "",
+		"on-click-right-release": "",
+		"on-double-click-right": "",
+		"on-triple-click-right": "",
+		"on-click-backward": "",
+		"on-click-backward-release": "",
+		"on-double-click-backward": "", 
+		"on-triple-click-backward": "", 
+		"on-click-forward": "",
+		"on-click-forward-release": "", 
+		"on-double-click-forward": "", 
+		"on-triple-click-forward": ""
 	},
 	
 	"custom/uptime": {
