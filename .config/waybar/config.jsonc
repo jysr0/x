@@ -89,7 +89,32 @@
 	///////////////////////////
 	// Modules configuration //
 	///////////////////////////
-    
+   
+	// NOTE: This is NOT a module, just a sample to copy/paste to the actual `menu` key in some of the modules bellow.
+	"menu": {
+		"on-click": "",
+		"on-click-release": "",
+		"on-double-click": "",
+		"on-triple-click": "",
+		"on-click-middle": "",
+		"on-click-middle-release": "",
+		"on-double-click-middle": "", 
+		"on-triple-click-middle": "", 
+		"on-click-right": "",
+		"on-click-right-release": "",
+		"on-double-click-right": "",
+		"on-triple-click-right": "",
+		"on-click-backward": "",
+		"on-click-backward-release": "",
+		"on-double-click-backward": "", 
+		"on-triple-click-backward": "", 
+		"on-click-forward": "",
+		"on-click-forward-release": "", 
+		"on-double-click-forward": "", 
+		"on-triple-click-forward": ""
+	},
+
+
 	// Group modules
 	/*"group/one": {
 		"orientation": "horizontal",
@@ -929,7 +954,7 @@
 	},
 	
 	"disk": {
-		"path": "/users",
+		"path": "/home",
 		"interval": 40,
 		"format": "󰉌 {percentage_used}%",
 		// "format": "󰉌  {used} / {total}",
@@ -953,30 +978,6 @@
 		"menu-file": "",
 		"menu-actions": [],*/
 		"expand": false
-	},
-
-	// This is just a sample to copy/paste to the actual `menu` key in some of the modules.
-	"menu": {
-		"on-click": "",
-		"on-click-release": "",
-		"on-double-click": "",
-		"on-triple-click": "",
-		"on-click-middle": "",
-		"on-click-middle-release": "",
-		"on-double-click-middle": "", 
-		"on-triple-click-middle": "", 
-		"on-click-right": "",
-		"on-click-right-release": "",
-		"on-double-click-right": "",
-		"on-triple-click-right": "",
-		"on-click-backward": "",
-		"on-click-backward-release": "",
-		"on-double-click-backward": "", 
-		"on-triple-click-backward": "", 
-		"on-click-forward": "",
-		"on-click-forward-release": "", 
-		"on-double-click-forward": "", 
-		"on-triple-click-forward": ""
 	},
 	
 	"custom/uptime": {
