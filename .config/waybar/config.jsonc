@@ -731,8 +731,8 @@
 		"on-double-click-forward": "", 
 		"on-triple-click-forward": "", 
 		"on-scroll-left": "", 
-		"on-scroll-right": "",
-		"smooth-scrolling-threshold": ,*/
+		"on-scroll-right": "", */
+		"smooth-scrolling-threshold": 1.4,
 		"reverse-scrolling": false,
 		"scroll-step": 1.0,
 		"min-brightness": 10.0,
@@ -918,8 +918,8 @@
 		"on-update": "",
 		"states": {},
 		"ignored-sinks": [],
-		"on-click-middle": "",
-		"smooth-scrolling-threshold": ,*/
+		"on-click-middle": "", */
+		"smooth-scrolling-threshold": 1.4,
 		"reverse-scrolling": false,
 		"tooltip": false,
 		"on-scroll-up": "pamixer -i 2",
